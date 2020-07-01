@@ -1,24 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Header from "./Header";
+import CardList from "./CardList";
+import Books from "./bookTitles.json";
+import CardHeader  from "./CardHeader";
 
 function App() {
+  let booksArr = Books.data;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <Header />
+      </div>
+      <br />
+      <div className="row">
+        <div className="col-md-2"></div>
+        <div className="col-md-2">
+          <CardHeader props={"Want To Read"} />
+          {booksArr.map((book, index) =>
+            book.status === "Want To Read" ? (
+              <CardList {...book} key={index} />
+            ) : null
+          )}
+        </div>
+        <div className="col-md-1"></div>
+        <div className="col-md-2">
+          <CardHeader props={"Currently Reading"} />
+          {booksArr.map((book, index) =>
+            book.status === "Currently Reading" ? (
+              <CardList {...book} key={index} />
+            ) : null
+          )}
+        </div>
+        <div className="col-md-1"></div>
+        <div className="col-md-2">
+          <CardHeader props={"Read"} />
+          {booksArr.map((book, index) =>
+            book.status === "Read" ? <CardList {...book} key={index} /> : null
+          )}
+        </div>
+        <div className="col-md-2"></div>
+      </div>
     </div>
   );
 }
