@@ -1,66 +1,82 @@
 {
   "data": [
     {
+      "index": 0,
       "title": "Beloved",
       "status": "Read"
     },
     {
+      "index": 1,
       "title": "I Know Why The Caged Bird Sings",
       "status": "Read"
     },
     {
+      "index": 2,
       "title": "I'm Still Here",
       "status": "Read"
     },
     {
+      "index": 3,
       "title": "Lab Girl",
       "status": "Read"
     },
     {
+      "index": 4,
       "title": "There I Am",
       "status": "Read"
     },
     {
+      "index": 5,
       "title": "It Didn't Start With You",
       "status": "Read"
     },
     {
+      "index": 6,
       "title": "The Glass Castle",
       "status": "Read"
     },
     {
+      "index": 7,
       "title": "Untamed",
       "status": "Read"
     },
     {
+      "index": 8,
       "title": "Talking To Strangers",
       "status": "Read"
     },
     {
+      "index": 9,
       "title": "Stamped From The Beginning",
       "status": "Currently Reading"
     },
     {
+      "index": 10,
       "title": "The New Jim Crow",
       "status": "Want To Read"
     },
     {
+      "index": 11,
       "title": "Don't Touch My Hair",
       "status": "Want To Read"
     },
     {
+      "index": 12,
       "title": "So You Want To Talk About Race",
       "status": "Want To Read"
     },
     {
+      "index": 13,
       "title": "Freedom Is A Constant Struggle",
       "status": "Want To Read"
     },
     {
+      "index": 14,
       "title": "The Color Of Law",
       "status": "Want To Read"
     },
     {
+      "index": 15,
       "title": "Race After Technology",
       "status": "Want To Read"
     }
